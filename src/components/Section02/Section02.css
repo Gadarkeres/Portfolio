@@ -48,6 +48,8 @@
   border-radius: 5px;
   color: white;
   transition: 0.3s ease-in-out;
+  margin-bottom: 30px;
+  
   
 }
 #section2 .card2 a:hover {

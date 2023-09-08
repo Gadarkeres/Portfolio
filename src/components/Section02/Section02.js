@@ -6,7 +6,7 @@ const Section02 = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true, 
-    threshold: 0.3, 
+    threshold: 0.1, 
   });
   const animatedClass = inView ? 'animaction' : ''; 
   return (
