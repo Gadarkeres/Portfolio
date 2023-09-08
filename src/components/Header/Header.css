@@ -84,4 +84,7 @@ header ul {
 .menu-mobile svg{
     visibility: visible;
 }
+.link{
+    visibility: hidden;
+}
 }

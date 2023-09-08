@@ -19,7 +19,7 @@ const Header = () => {
       <div className="menu-mobile">
       <FaBars onClick={toggleMenu}/>
     </div>
-    <div className="logo"><a href="#section1">M/R</a></div>
+    <div className="logo"><a href="#section1" className='link'>M/R</a></div>
     <div className="Box-nav">
       <nav>
         <ul>
