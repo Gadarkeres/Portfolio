@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.06d43f69.css",
-    "main.js": "/Portfolio/static/js/main.6f6b02b2.js",
+    "main.js": "/Portfolio/static/js/main.3fbb56c8.js",
     "static/media/em-breve.jpg": "/Portfolio/static/media/em-breve.fc30758a22fdab20c69d.jpg",
+    "static/media/Curriculo-Matheus-Att.pdf": "/Portfolio/static/media/Curriculo-Matheus-Att.4d80bf5a81e96a6ff67b.pdf",
     "static/media/hd-filmes2.png": "/Portfolio/static/media/hd-filmes2.d1b51947d294c8da8fc7.png",
-    "static/media/Curriculo-Matheus-Att.pdf": "/Portfolio/static/media/Curriculo-Matheus-Att.6310f77307d11ff0a1ff.pdf",
     "static/media/email.png": "/Portfolio/static/media/email.29de3fc0546ea5bbbfec.png",
     "static/media/tempo.png": "/Portfolio/static/media/tempo.d7420e68007849c3b23f.png",
     "index.html": "/Portfolio/index.html",
     "main.06d43f69.css.map": "/Portfolio/static/css/main.06d43f69.css.map",
-    "main.6f6b02b2.js.map": "/Portfolio/static/js/main.6f6b02b2.js.map"
+    "main.3fbb56c8.js.map": "/Portfolio/static/js/main.3fbb56c8.js.map"
   },
   "entrypoints": [
     "static/css/main.06d43f69.css",
-    "static/js/main.6f6b02b2.js"
+    "static/js/main.3fbb56c8.js"
   ]
 }
