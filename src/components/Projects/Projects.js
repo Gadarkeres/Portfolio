@@ -7,7 +7,7 @@ import img2 from './img/tempo.png'
 import img3 from './img/email.png'
 import embreve from './img/em-breve.jpg'
 // pdf
-import pdf from './file/Curriculo-Matheus-Att.pdf' 
+import pdf from './file/Curriculo-Matheus-Att.pdf'
 // icon
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
