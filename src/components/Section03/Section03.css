@@ -90,6 +90,7 @@
 }
 .text_expand{
     height: 160px;
+    border: 2px solid rgb(0, 0, 0);
 }
 @media screen and (max-width:850px){
     .text_little{
