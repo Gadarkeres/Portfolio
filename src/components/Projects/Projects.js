@@ -17,10 +17,10 @@ const Projects = () => {
     <section id="section4">
       <h2 className="Tittle">PROJETOS</h2>
       <div className="container_card">
-        <Card img={img1} title={'Projeto pessoal pagina de divulgação HD FILMES'} link={"https://gadarkeres.github.io/web-react/"}/>
         <Card img={img2} title={'Projeto pessoal previsão do tempo'} link={"https://gadarkeres.github.io/Projeto-Tempo/"}/>
         <Card img={img3} title={'Projeto desafio validação de email'} link={"https://gadarkeres.github.io/email-validation-project/"}/>
         <Card img={embreve} title={"EM BREVE"}/>
+        <Card img={embreve}title={"EM BREVE"}/>
         <Card img={embreve}title={"EM BREVE"}/>
         <Card img={embreve}title={"EM BREVE"}/>
         
