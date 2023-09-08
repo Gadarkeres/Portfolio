@@ -1,0 +1,80 @@
+:root {
+  /* colors */
+  --light-green: #cedebd;
+  --dark-green: #435334;
+  --light: #faf1e4;
+  --blue: #0e4361;
+  /* fonts  300, 500*/
+  --font-logo: "Shrikhand";
+  --font-standard: "Roboto";
+}
+
+#section2 {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  min-height: 100vh;
+  background-color: var(--light-green);
+
+}
+#section2 .card1 {
+  opacity: 0;
+  width: 40vw;
+  min-width: 400px;
+}
+.card1 > p {
+  text-align: justify;
+  font-family: var(--font-standard), sans-serif;
+  color: var(--dark-green);
+  line-height: 1.5em;
+  text-indent: 1em;
+}
+.card1 > h2 {
+  font-family: var(--font-standard), sans-serif;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+#section2 .card2 a {
+  font-family: var(--font-standard), sans-serif;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  background-color: #008bbac4;
+  padding: 0 35px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  
+}
+#section2 .card2 a:hover {
+  background-color: #008cba;
+   
+
+}
+
+.animaction {
+  animation-name: animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+@keyframes animation {
+  from{
+    opacity: 0;
+    margin: 30px;
+  }
+  to{
+    opacity: 1;
+    margin: 0px;
+  }
+  }
+
+  
+  @media screen and (max-width:850px){
+    #section2{
+      flex-direction: column;
+    }
+  }

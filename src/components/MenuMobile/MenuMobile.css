@@ -1,0 +1,70 @@
+.box_menu{
+    z-index: 10;
+    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    max-width: 320px;
+   background-color: #b5c3a6;
+    transition: 0.5s all;
+    box-shadow: 2px 2px 2px black;
+}
+.menu_mobile{
+    position: relative;
+    transition: 0.8 all;
+
+}
+.menu_mobile ul{
+    list-style: none;
+}
+.menu_mobile ul li{
+padding-top:5em;
+font-size: 1.3em;
+}
+.menu_mobile ul li a{
+    font-family: var(--font-standard), sans-serif;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: var(--blue);
+    text-decoration: none;
+    padding: 10px;
+    animation-name: text-animaction;
+    animation-duration: 0.6s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    margin-left: 50px;
+    opacity: 0;
+
+}
+.menu_mobile ul li a:hover{
+    text-decoration: underline;
+}
+
+.visible{
+    top: 0px;
+    right: 0px;
+}
+
+.hidden{
+   right: -100vw;
+}
+.menu_mobile svg{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+@keyframes text-animaction{
+    from{
+        opacity: 0;
+        margin-left: 50px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+

@@ -1,0 +1,34 @@
+footer {
+  font-family: var(--font-standard);
+  height: 90px;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+footer .contato p {
+  color: #f5f5f5;
+}
+footer .icones p svg {
+  flex-wrap: nowrap;
+  color: #f5f5f5;
+  font-size: 2.2em;
+  margin: 10px;
+  transition: transform 0.8s;
+}
+footer .icones a svg:hover {
+  color: #008cba;
+  transform: rotate(360deg);
+}
+@media screen and (max-width:700px){
+  footer{
+    flex-direction: column;
+    gap:0px;
+    height: 157px;
+  }
+  footer .icones p svg{
+    margin: 0px 10px;
+  }
+}
