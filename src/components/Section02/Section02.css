@@ -23,6 +23,7 @@
   opacity: 0;
   width: 40vw;
   min-width: 400px;
+
 }
 .card1 > p {
   text-align: justify;
@@ -78,5 +79,14 @@
   @media screen and (max-width:850px){
     #section2{
       flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:550px){
+    .card1 p{
+      font-size: 0.8em;
+    }
+    #section2 .card1{
+      min-width: 320px;
     }
   }

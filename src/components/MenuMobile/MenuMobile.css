@@ -23,7 +23,7 @@ font-size: 1.3em;
 }
 .menu_mobile ul li a{
     font-family: var(--font-standard), sans-serif;
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-transform: capitalize;
     color: var(--blue);
     text-decoration: none;

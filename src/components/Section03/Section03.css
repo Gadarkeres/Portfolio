@@ -100,4 +100,10 @@
         height: 300px;
         min-width: 300px;
     }
+.text_little p{
+    text-align: left;
+}
+.container {
+    gap: 50px;
+}
 }
