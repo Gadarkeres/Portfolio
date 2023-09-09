@@ -16,10 +16,12 @@
 }
 .menu_mobile ul{
     list-style: none;
+    
 }
 .menu_mobile ul li{
 padding-top:5em;
 font-size: 1.3em;
+
 }
 .menu_mobile ul li a{
     font-family: var(--font-standard), sans-serif;
@@ -55,6 +57,9 @@ font-size: 1.3em;
     font-size: 2em;
     cursor: pointer;
     color: var(--blue);
+    animation-name: svg-animaction;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes text-animaction{
@@ -66,5 +71,14 @@ font-size: 1.3em;
         opacity: 1;
         margin-left: 0px;
     }
+}
+@keyframes svg-animaction{
+    25% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+   
 }
 

@@ -3,6 +3,11 @@ import './Section03.css'
 import { useState } from "react";
 // icons
 import { FaHtml5,FaCss3Alt, FaJs, FaReact, FaWindowClose, } from "react-icons/fa"
+//images
+import html_image from './images/html-logo.png'
+import css_image from './images/css-image.png'
+import js_image from './images/javascript-logo.png'
+import react_image from './images/react-icon.png'
 
 const Section03 = () => {
     
@@ -58,13 +63,24 @@ const handleChangeMsgHTML = () =>{
     <div className="tittle"><h2>Habilidades</h2></div>
     <div className="container-pai">
       <div className="container">
-        <div className="habilidades" onClick={() => { handleChangeMsgHTML(); handleMsgativa('html'); }} id={msgAtiva === 'html' ? 'habilidade_ativa' : ''}><FaHtml5/></div>
+        <div className="habilidades" onClick={() => { handleChangeMsgHTML(); handleMsgativa('html'); }} id={msgAtiva === 'html' ? 'habilidade_ativa' : ''}>
+          <img  className="image"src={ html_image } alt="icone do html" />
 
-        <div className="habilidades" onClick={() => {handleChangeMsgCSS(); handleMsgativa('css')}} id={msgAtiva === 'css' ? 'habilidade_ativa' : ''} ><FaCss3Alt/></div>
+        </div>
 
-        <div className="habilidades" onClick={() => {handleChangeMsgJS(); handleMsgativa('js')}} id={msgAtiva === 'js' ? 'habilidade_ativa' : ''} ><FaJs/></div>
+        <div className="habilidades" onClick={() => {handleChangeMsgCSS(); handleMsgativa('css')}} id={msgAtiva === 'css' ? 'habilidade_ativa' : ''} >
+        <img className="image"  style={{ position:"absolute", right:"45px"}} src={css_image} alt="icone do css" />
+          
+        </div>
 
-        <div className="habilidades" onClick={() => {handleChangeMsgReact(); handleMsgativa('react')}} id={msgAtiva === 'react' ? 'habilidade_ativa' : ''}><FaReact/></div>
+        <div className="habilidades" onClick={() => {handleChangeMsgJS(); handleMsgativa('js')}} id={msgAtiva === 'js' ? 'habilidade_ativa' : ''} >
+          <img  className="image"src={js_image} alt="icone do Javascript" />
+        </div>
+
+        <div className="habilidades" onClick={() => {handleChangeMsgReact(); handleMsgativa('react')}} id={msgAtiva === 'react' ? 'habilidade_ativa' : ''}>
+        <img className='image' src={react_image} alt="icone do React"  />
+
+        </div>
       </div>
       <div className="text" >
         <div className={`text_little ${expandText}`}>

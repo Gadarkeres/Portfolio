@@ -50,6 +50,12 @@
     right: 54px;
     
 } 
+.image{
+    position: absolute;
+    height: 100px;
+    top: 30px;
+    right: 34px;
+}
 .text{
     display: flex;
     justify-content: center;
@@ -84,6 +90,7 @@
     cursor: pointer;
     opacity: 0.8;
     transition: 0.5s;
+    padding: 2px;
 }
 .text_little svg:hover{
     opacity: 1;
