@@ -3,6 +3,7 @@
     min-height: 100vh;
 }
 .tittle{
+
     font-size: 1.7rem;
     text-align: center;
     padding:80px 0px;
@@ -31,8 +32,8 @@
     height: 100px;
     padding: 30px;
     border-radius: 5px;
-    background-color: #f5f5f5;
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -40,6 +41,7 @@
     opacity: 1;
 }
 #habilidade_ativa{
+    background-color: white;
     opacity: 1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -102,6 +104,23 @@
     height: 160px;
     border: 2px solid rgb(0, 0, 0);
 }
+
+.animaction {
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+  @keyframes animation {
+    from{
+      opacity: 0;
+    
+    }
+    to{
+      opacity: 1;
+    }
+    }
+  
+
 @media screen and (max-width:850px){
     .text_little{
         height: 100px;

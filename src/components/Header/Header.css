@@ -85,6 +85,8 @@ header ul {
     visibility: visible;
 }
 .link{
-    visibility: hidden;
+   position: absolute;
+   top: 30px;
+   left: 30px;
 }
 }

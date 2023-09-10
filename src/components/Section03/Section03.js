@@ -1,6 +1,8 @@
 
 import './Section03.css'
+//hooks
 import { useState } from "react";
+import { useInView } from 'react-intersection-observer';
 // icons
 import { FaWindowClose, } from "react-icons/fa"
 //images
@@ -56,28 +58,32 @@ const handleChangeMsgHTML = () =>{
       setMsgAtiva(null)
     }
   }
-
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+    threshold: 0.1, 
+  });
+  const animatedClass = inView ? 'animaction' : ''; 
 
   return (
     <section id="section3">
     <div className="tittle"><h2>Habilidades</h2></div>
     <div className="container-pai">
       <div className="container">
-        <div className="habilidades" onClick={() => { handleChangeMsgHTML(); handleMsgativa('html'); }} id={msgAtiva === 'html' ? 'habilidade_ativa' : ''}>
+        <div className={`habilidades ${animatedClass}` } ref={ref} onClick={() => { handleChangeMsgHTML(); handleMsgativa('html'); }} id={msgAtiva === 'html' ? 'habilidade_ativa' : ''}>
           <img  className="image"src={ html_image } alt="icone do html" />
 
         </div>
 
-        <div className="habilidades" onClick={() => {handleChangeMsgCSS(); handleMsgativa('css')}} id={msgAtiva === 'css' ? 'habilidade_ativa' : ''} >
+        <div className={`habilidades ${animatedClass}` }  onClick={() => {handleChangeMsgCSS(); handleMsgativa('css')}} id={msgAtiva === 'css' ? 'habilidade_ativa' : ''} >
         <img className="image"  style={{ position:"absolute", right:"30px"}} src={css_image} alt="icone do css" />
           
         </div>
 
-        <div className="habilidades" onClick={() => {handleChangeMsgJS(); handleMsgativa('js')}} id={msgAtiva === 'js' ? 'habilidade_ativa' : ''} >
+        <div className={`habilidades ${animatedClass}` }  onClick={() => {handleChangeMsgJS(); handleMsgativa('js')}} id={msgAtiva === 'js' ? 'habilidade_ativa' : ''} >
           <img  className="image"src={js_image} alt="icone do Javascript" />
         </div>
 
-        <div className="habilidades" onClick={() => {handleChangeMsgReact(); handleMsgativa('react')}} id={msgAtiva === 'react' ? 'habilidade_ativa' : ''}>
+        <div className={`habilidades ${animatedClass}` }  onClick={() => {handleChangeMsgReact(); handleMsgativa('react')}} id={msgAtiva === 'react' ? 'habilidade_ativa' : ''}>
         <img className='image' src={react_image} style={{position:"absolute", right:"32px"}}  alt="icone do React"  />
 
         </div>
