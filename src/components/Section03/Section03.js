@@ -2,7 +2,7 @@
 import './Section03.css'
 import { useState } from "react";
 // icons
-import { FaHtml5,FaCss3Alt, FaJs, FaReact, FaWindowClose, } from "react-icons/fa"
+import { FaWindowClose, } from "react-icons/fa"
 //images
 import html_image from './images/html-logo.png'
 import css_image from './images/css-image.png'
@@ -69,7 +69,7 @@ const handleChangeMsgHTML = () =>{
         </div>
 
         <div className="habilidades" onClick={() => {handleChangeMsgCSS(); handleMsgativa('css')}} id={msgAtiva === 'css' ? 'habilidade_ativa' : ''} >
-        <img className="image"  style={{ position:"absolute", right:"45px"}} src={css_image} alt="icone do css" />
+        <img className="image"  style={{ position:"absolute", right:"30px"}} src={css_image} alt="icone do css" />
           
         </div>
 
@@ -78,7 +78,7 @@ const handleChangeMsgHTML = () =>{
         </div>
 
         <div className="habilidades" onClick={() => {handleChangeMsgReact(); handleMsgativa('react')}} id={msgAtiva === 'react' ? 'habilidade_ativa' : ''}>
-        <img className='image' src={react_image} alt="icone do React"  />
+        <img className='image' src={react_image} style={{position:"absolute", right:"32px"}}  alt="icone do React"  />
 
         </div>
       </div>

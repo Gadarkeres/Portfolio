@@ -13,7 +13,7 @@ const Section02 = () => {
     <section id="section2">
     <div className={`card1 ${animatedClass}`} ref={ref}>
       <h2>Sobre mim</h2>
-      <p>Meu nome é Matheus Rafael e sou um entusiasta da tecnologia apaixonado por desenvolvimento web, Com uma base sólida em HTML, CSS, JavaScript e React. Acredito que o aprendizado é uma jornada constante. Estou em busca de oportunidades para aperfeiçoar e descobrir novos conhecimentos no mundo da programação e sempre disposto a aprender coisas novas.</p>
+      <p>Meu nome é Matheus Rafael e sou um entusiasta da tecnologia apaixonado por desenvolvimento web, Com uma base sólida em HTML, CSS, JavaScript e React. Acredito que o aprendizado é uma jornada constante. Estou em busca de oportunidades para aperfeiçoar e descobrir novos conhecimentos no mundo da programação.</p>
     </div>
     <div className="card2">
       <a href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/" target="_blank">Acesse meu linkedin<FaExternalLinkAlt style={{position:"absolute", top:"51", right:"130"}}/></a>

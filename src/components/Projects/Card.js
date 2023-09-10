@@ -5,7 +5,7 @@ const Card = ({ img, title, link }) => {
   return (
     <div className="container_project">
       <div className="img">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <img src={img} alt={title} />
         </a>
       </div>

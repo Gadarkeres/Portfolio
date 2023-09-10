@@ -23,6 +23,9 @@
     
 }
 .container .habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100px;
     height: 100px;
