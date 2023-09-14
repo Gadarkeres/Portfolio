@@ -32,8 +32,8 @@
     position: relative;
     text-decoration: none;
     background-color: #090C9B;
-    padding: 20px 40px;
-    border-radius: 5px;
+    padding: 20px 30px;
+    border-radius: 25px;
     color: white;
     transition: opacity 0.3s ease-in-out;
     opacity: 0.8;
@@ -41,6 +41,7 @@
 .button_container a:hover {
     background-color: #090C9B;
     opacity: 1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
   }
   @media screen and (max-width:580px){
    .container_card{

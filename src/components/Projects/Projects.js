@@ -26,7 +26,7 @@ const Projects = () => {
         
       </div>
       <div className="button_container" >
-        <a href={pdf} download>Baixar Curriculum <FaArrowAltCircleDown style={{position:"absolute", top:"23", right:"10"}}/> <FaArrowAltCircleDown style={{position:"absolute", top:"23", right:"238"}}/></a>
+        <a href={pdf} download>Download CV</a>
       </div>
     </section>
   );
