@@ -42,6 +42,7 @@
     transform: scale(1.10);
 }
 #habilidade_ativa{
+    transform: scale(1.10);
     background-color: white;
     opacity: 1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
