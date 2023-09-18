@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+    position: relative; 
 }
 section div{
     font-size: 1.5em;
@@ -79,10 +80,6 @@ section span{
 
 
    @media screen and  (max-width:980px){
-    .overlay{
-      height: 115%;
-    }
-    
     .section1div{
         font-size: 1.1em;
         margin-top: 100px;
@@ -95,7 +92,6 @@ section span{
         margin-bottom: 20px;
         width: 350px;
     }
-
    }
  
    
