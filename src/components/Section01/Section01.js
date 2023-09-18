@@ -1,6 +1,7 @@
 import './Section01.css'
 import lottie from 'lottie-web'
 import { useEffect, useRef } from 'react'
+import img from './background.jpg'
 
 const Section01 = () => {
 
@@ -20,8 +21,8 @@ const Section01 = () => {
     };
   }, [])
   return (
-    
-    <section id="section1">
+    <section id="section1" style={{ backgroundImage: `url(${img})` }}>
+       <div className='overlay'></div>
     <div className='section1div'><h1>Oi, eu sou o <br /> <span>Matheus Rafael.</span> <br />
     Desenvolvedor front-end.</h1>
     </div>
