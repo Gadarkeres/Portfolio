@@ -35,10 +35,11 @@
     background-color: rgba(255, 255, 255, 0.85);
     opacity: 0;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s ease-out;
 }
 .container .habilidades:hover{
     opacity: 1;
+    transform: scale(1.10);
 }
 #habilidade_ativa{
     background-color: white;
