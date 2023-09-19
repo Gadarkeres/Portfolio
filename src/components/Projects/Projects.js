@@ -19,7 +19,7 @@ const Projects = () => {
     <section id="section4">
       <h2 className="Tittle">PROJETOS</h2>
       <div className="container_card">
-      <Card img={img5}title={"Lista de tarefas automática"} link="https://gadarkeres.github.io/todo-list/"/>
+      <Card img={img5}title={"Projeto: Lista de tarefas automática"} link="https://gadarkeres.github.io/todo-list/"/>
         <Card img={img1} title={"Projeto: Timer de estudos"} link={"https://gadarkeres.github.io/Projeto-timer/"}/>
         <Card img={img2} title={'Projeto: Previsão do tempo'} link={"https://gadarkeres.github.io/Projeto-Tempo/"}/>
         <Card img={img4}title={"Projeto: Gerador de senha e nicks"} link={"https://gadarkeres.github.io/Generate-Pass-Nick/"}/>
