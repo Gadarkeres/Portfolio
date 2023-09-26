@@ -1,5 +1,5 @@
 #section3{
-    background-color: var(--dark-green);
+    background-color: #c3e3fd;
     min-height: 100vh;
 }
 .tittle{
@@ -8,8 +8,8 @@
     text-align: center;
     padding:80px 0px;
     font-family: var(--font-standard);
-    color: var(--light-green);
-    text-transform: capitalize;
+    color: var(--blue-v);
+    text-transform: uppercase;
 }
 
 .container{
@@ -74,7 +74,7 @@
     height: 50px; /* 180px default */
     width: 50vw;
     max-width: 650px;;
-    background-color: #d3d3d3;
+    background-color:#f6f6f6;;
     padding: 30px;
     border-radius: 5px;
     margin-bottom: 180px;

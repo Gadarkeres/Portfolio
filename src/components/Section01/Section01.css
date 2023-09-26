@@ -34,7 +34,7 @@ section h1{
   text-shadow: 1px 1px 2px black;
     font-family: var(--font-standard), sans-serif;
     line-height: 3rem;
-    color: var(--light-green);
+    color: #c3e3fd;
      opacity: 0;
     animation-name:animationtext;
     animation-delay: 0.5s;

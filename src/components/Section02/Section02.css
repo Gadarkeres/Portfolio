@@ -4,9 +4,16 @@
   --dark-green: #435334;
   --light: #faf1e4;
   --blue: #0e4361;
+
+  --blue-v:#2196f3;
+  --blue-v-light:#6eb8f5;
+  --blue-v-medium:#9acef8
+
   /* fonts  300, 500*/
   --font-logo: "Shrikhand";
   --font-standard: "Roboto";
+
+
 }
 
 #section2 {
@@ -16,7 +23,7 @@
   justify-content: center;
   gap: 120px;
   min-height: 100vh;
-  background-color: var(--light-green);
+  background-color: var(--blue);
 
 }
 #section2 .card1 {
@@ -28,13 +35,13 @@
 .card1 > p {
   text-align: justify;
   font-family: var(--font-standard), sans-serif;
-  color: var(--dark-green);
+  color: var(--light);
   line-height: 1.5em;
   text-indent: 1em;
 }
 .card1 > h2 {
   font-family: var(--font-standard), sans-serif;
-  color: var(--blue);
+  color: #c3e3fd;
   text-transform: capitalize;
 }
 #section2 .card2 a {
@@ -42,18 +49,19 @@
   display: inline-block;
   position: relative;
   text-decoration: none;
-  background-color: #008bbac4;
+  background-color:  #090b9ba9;
   padding: 0 35px;
   padding-top: 20px;
   padding-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 15px;
   color: white;
   transition: 0.3s ease-in-out;
   margin-bottom: 20px;
- 
+
 }
 #section2 .card2 a:hover {
-  background-color: #008cba;
+  background-color: #090C9B;
+  transform: scale(1.02);
 }
 #section2 .card2{
   opacity: 0;

@@ -13,7 +13,7 @@ const Section01 = () => {
       renderer:"svg",
       loop:true,
       autoplay:true,
-      animationData: require('./animation_lmcrsqeg.json')
+      animationData: require('./animation_lmznwpjv.json')
      
     });
     return () => {
