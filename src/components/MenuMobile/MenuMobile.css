@@ -3,9 +3,9 @@
     position: absolute;
     position: fixed;
     height: 100%;
-    width: 60%;
+    width:55%;
     max-width: 320px;
-   background-color: #b5c3a6;
+   background-color: #89caff;
     transition: 0.5s all;
     box-shadow: 2px 2px 2px black;
 }
