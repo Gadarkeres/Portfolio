@@ -6,7 +6,6 @@
   background-color: #f6f6f6;
   border: 4px solid #f6f6f6;
   transition: 0.2s;
-  overflow: hidden;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
 }
 .container_project:hover {
@@ -31,9 +30,25 @@
  
 }
 .container_project .Titulo {
+  position: relative;
   font-size: 0.7em;
   text-align: center;
   color: rgba(0, 0, 0, 0.800);
+}
+.container_project .Titulo a{
+  position: absolute;
+  top: 38px;
+  right: 10px;
+  font-size: 1rem;
+background-color: rgba(0, 0, 0, 0.757);
+color: white;
+  transition: all 0.5s;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+.container_project .Titulo a:hover{
+  background-color: black;
 }
 .container_project h4{
     padding-bottom: 15px;
@@ -41,5 +56,8 @@
 @media screen and (max-width:850px){
   .container_project .img a{
     opacity: 1;
+  }
+  .container_project .Titulo a{
+    padding: 2.5px;
   }
 }
