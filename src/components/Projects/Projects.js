@@ -9,7 +9,7 @@ import img5 from './img/todo-list.png'
 import img6 from './img/projeto_filme.ong.png'
 import img7 from './img/vayne.png'
 // pdf
-import pdf from './file/Curriculo-Matheus-Att.pdf'
+import pdf from './file/CV-Atualizado-Matheus.pdf'
 
 
 
