@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e8b493ef.css",
-    "main.js": "/Portfolio/static/js/main.c7f78421.js",
+    "main.js": "/Portfolio/static/js/main.7f239a78.js",
     "static/media/background.jpg": "/Portfolio/static/media/background.5fdbbe57f0f4ddb8d873.jpg",
     "static/media/css-image.png": "/Portfolio/static/media/css-image.19c8605d6b2861f5fbe0.png",
-    "static/media/Curriculo-Matheus-Att.pdf": "/Portfolio/static/media/Curriculo-Matheus-Att.4d80bf5a81e96a6ff67b.pdf",
+    "static/media/CV-Atualizado-Matheus.pdf": "/Portfolio/static/media/CV-Atualizado-Matheus.9ded912ed5e8457db9a8.pdf",
     "static/media/projeto_filme.ong.png": "/Portfolio/static/media/projeto_filme.ong.ce3f67c163305f4b2f68.png",
     "static/media/javascript-logo.png": "/Portfolio/static/media/javascript-logo.130c0ecd57833da6f75c.png",
     "static/media/vayne.png": "/Portfolio/static/media/vayne.2d662827001600773e53.png",
@@ -15,10 +15,10 @@
     "static/media/todo-list.png": "/Portfolio/static/media/todo-list.61b26d4a4666da45a6bf.png",
     "index.html": "/Portfolio/index.html",
     "main.e8b493ef.css.map": "/Portfolio/static/css/main.e8b493ef.css.map",
-    "main.c7f78421.js.map": "/Portfolio/static/js/main.c7f78421.js.map"
+    "main.7f239a78.js.map": "/Portfolio/static/js/main.7f239a78.js.map"
   },
   "entrypoints": [
     "static/css/main.e8b493ef.css",
-    "static/js/main.c7f78421.js"
+    "static/js/main.7f239a78.js"
   ]
 }
