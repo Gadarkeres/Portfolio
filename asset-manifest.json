@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e8b493ef.css",
-    "main.js": "/Portfolio/static/js/main.7f239a78.js",
+    "main.js": "/Portfolio/static/js/main.6756263e.js",
+    "static/media/petshop-virtual.png": "/Portfolio/static/media/petshop-virtual.c5710ae426bb5fb2a2dd.png",
     "static/media/background.jpg": "/Portfolio/static/media/background.5fdbbe57f0f4ddb8d873.jpg",
     "static/media/css-image.png": "/Portfolio/static/media/css-image.19c8605d6b2861f5fbe0.png",
     "static/media/CV-Atualizado-Matheus.pdf": "/Portfolio/static/media/CV-Atualizado-Matheus.9ded912ed5e8457db9a8.pdf",
@@ -10,15 +11,14 @@
     "static/media/vayne.png": "/Portfolio/static/media/vayne.2d662827001600773e53.png",
     "static/media/react-icon.png": "/Portfolio/static/media/react-icon.be6888e73f20a1e7ee12.png",
     "static/media/timer.png": "/Portfolio/static/media/timer.7fab41fad7064f7c1db9.png",
-    "static/media/tempo.png": "/Portfolio/static/media/tempo.d7420e68007849c3b23f.png",
     "static/media/gerador.png": "/Portfolio/static/media/gerador.0e2efae9ce5df9ca61e1.png",
     "static/media/todo-list.png": "/Portfolio/static/media/todo-list.61b26d4a4666da45a6bf.png",
     "index.html": "/Portfolio/index.html",
     "main.e8b493ef.css.map": "/Portfolio/static/css/main.e8b493ef.css.map",
-    "main.7f239a78.js.map": "/Portfolio/static/js/main.7f239a78.js.map"
+    "main.6756263e.js.map": "/Portfolio/static/js/main.6756263e.js.map"
   },
   "entrypoints": [
     "static/css/main.e8b493ef.css",
-    "static/js/main.7f239a78.js"
+    "static/js/main.6756263e.js"
   ]
 }
