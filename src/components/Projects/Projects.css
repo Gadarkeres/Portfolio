@@ -36,8 +36,10 @@
     border-radius: 25px;
     color: white;
     transition: opacity 0.3s ease-in-out;
+    opacity: 0.9;
 }
 .button_container a:hover {
+    opacity: 1;
     background-color: #008bba;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
   }

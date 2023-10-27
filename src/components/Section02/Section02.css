@@ -49,19 +49,18 @@
   display: inline-block;
   position: relative;
   text-decoration: none;
-  background-color:  #090b9ba9;
+  background-color:  #008bba;
   padding: 0 35px;
   padding-top: 20px;
   padding-bottom: 30px;
-  border-radius: 15px;
+  border-radius: 25px;
   color: white;
   transition: 0.3s ease-in-out;
   margin-bottom: 20px;
 
 }
 #section2 .card2 a:hover {
-  background-color: #090C9B;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 #section2 .card2{
   opacity: 0;
