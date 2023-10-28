@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .button_container a {
     position: relative;
@@ -31,15 +32,14 @@
     display: inline-block;
     position: relative;
     text-decoration: none;
-    background-color:  #008bba;
+    border: 2px solid #008bba;
     padding: 20px 30px;
     border-radius: 25px;
     color: white;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
+   
 }
 .button_container a:hover {
-    opacity: 1;
     background-color: #008bba;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
   }

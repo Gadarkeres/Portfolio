@@ -45,22 +45,25 @@
   text-transform: capitalize;
 }
 #section2 .card2 a {
+  text-align: center;
+  width: 260px;
   font-family: var(--font-standard), sans-serif;
   display: inline-block;
   position: relative;
   text-decoration: none;
   background-color:  #008bba;
-  padding: 0 35px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px;
   border-radius: 25px;
   color: white;
   transition: 0.3s ease-in-out;
   margin-bottom: 20px;
+  opacity: 0.9;
 
 }
 #section2 .card2 a:hover {
-  transform: scale(1.01);
+  letter-spacing: 3px;
+  opacity: 1;
+
 }
 #section2 .card2{
   opacity: 0;

@@ -2,7 +2,7 @@ import './Projects.css'
 // componentes
 import Card from './Card'
 // imagens
-import img1 from './img/timer.png'
+import img1 from './img/timer.png'  
 import img4 from './img/gerador.png'
 import img5 from './img/todo-list.png'
 import img6 from './img/projeto_filme.ong.png'
