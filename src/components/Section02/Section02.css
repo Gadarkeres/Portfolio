@@ -55,13 +55,14 @@
   padding: 20px;
   border-radius: 25px;
   color: white;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   margin-bottom: 20px;
   opacity: 0.9;
+  
 
 }
 #section2 .card2 a:hover {
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   opacity: 1;
 
 }

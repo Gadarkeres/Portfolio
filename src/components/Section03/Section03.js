@@ -10,6 +10,8 @@ import html_image from './images/html-logo.png'
 import css_image from './images/css-image.png'
 import js_image from './images/javascript-logo.png'
 import react_image from './images/react-icon.png'
+// pdf
+import pdf from './file/CV-Atualizado-Matheus.pdf'
 
 const Section03 = () => {
     
@@ -95,6 +97,9 @@ const handleChangeMsgHTML = () =>{
         </div>
       </div>
     </div>
+    <div className="button_container" >
+        <a href={pdf} download>Download CV</a>
+      </div>
  </section>
   )
 }

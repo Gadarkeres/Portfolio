@@ -3,7 +3,6 @@
     min-height: 100vh;
 }
 .tittle{
-
     font-size: 1.7rem;
     text-align: center;
     padding:80px 0px;
@@ -106,6 +105,32 @@
     height: 160px;
     border: 2px solid rgb(0, 0, 0);
 }
+.button_container{
+    margin-top: -12rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button_container a {
+    position: relative;
+    font-family: var(--font-standard), sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #008bba;
+    border: 2px solid #008bba;
+    padding: 20px 30px;
+    border-radius: 25px;
+    color: white;;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.9;
+   
+}
+.button_container a:hover {
+    opacity: 1;
+  
+  }
 
 .animaction {
     animation-name: animation;

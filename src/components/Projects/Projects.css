@@ -1,6 +1,8 @@
 #section4{
     min-height: 100vh;
     background-color: #0E4361;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 .Tittle{
     font-size: 2.2rem;
@@ -19,30 +21,38 @@
     gap: 20px;
     flex-wrap: wrap;
 }
-.button_container{
-    min-height: 200px;
+.button{
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    min-height: 150px;
 }
-.button_container a {
-    position: relative;
+#hidden{
+    display: none;
+}
+.button button{
+    min-width: 145px;
+    font-size: 1.2rem;
     font-family: var(--font-standard), sans-serif;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    border: 2px solid #008bba;
+    border: none;
+    background-color: #008bba;
     padding: 20px 30px;
     border-radius: 25px;
-    color: white;
-    transition: all 0.2s ease-in-out;
-   
+    color: white;;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.9;
+
 }
-.button_container a:hover {
-    background-color: #008bba;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
-  }
+.button button:hover{
+    cursor: pointer;
+    opacity: 1;
+    
+}
+
+
+
+
   @media screen and (max-width:580px){
    .container_card{
     width: 370px;
