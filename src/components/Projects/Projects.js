@@ -10,7 +10,7 @@ import img5 from './img/todo-list.png'
 import img6 from './img/projeto_filme.ong.png'
 import img7 from './img/vayne.png'
 import img8 from './img/petshop-virtual.png'
-import { FaAngleDown } from "react-icons/fa";
+
 
 
 const Projects = () => {
@@ -21,7 +21,6 @@ const [hidden, setHidden] = useState(false);
 const showMore = () => {
   setHidden(!hidden);
   const button = document.querySelector('.button button');
-  const section4 = document.querySelector('#section4')
   if (button.innerText === 'Ver mais ⬇') {
     button.innerHTML = 'Ver menos ⬆'
   } else {
