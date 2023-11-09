@@ -2,7 +2,7 @@ import "./mainpage.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MenuMobile from "./components/MenuMobile/MenuMobile";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact/Contact";
 import Section01 from "./components/Section01/Section01";
 import Section02 from "./components/Section02/Section02";
@@ -12,7 +12,7 @@ import Projects from "./components/Projects/Projects";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <MenuMobile/>
         <Header />
         <Routes>
@@ -23,12 +23,12 @@ function App() {
               <Section02 />
               <Section03 />
               <Projects />
-              
+              <Footer />
             </>
           }/>
         </Routes>
        
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

@@ -3,9 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   min-height: 100vh;
-   background-color: #CEDEBD;
-   flex-direction: column;
+    min-height: 100vh;
+    background-color: #CEDEBD;
+    flex-direction: column;
 }
 label{
     display: block;
@@ -70,4 +70,12 @@ label{
 }
 small{
     color: red;
+}
+@media screen and (max-width:600px) {
+    .container-contact{
+        padding-top: 80px;
+    }
+   .title h2{
+        max-width: 300px;
+    }
 }

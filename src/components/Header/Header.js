@@ -1,13 +1,16 @@
 import './Header.css'
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { MenuContext } from '../../context/MenuContext';
 import {Link} from 'react-router-dom'
 // icones
 import { FaBars } from "react-icons/fa6";
 
 const Header = () => {
-  
       const {toggleMenu} = useContext(MenuContext)
+      function scrollToElement(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      }
+
       
   return (
     <header>
@@ -18,18 +21,14 @@ const Header = () => {
     <div className="Box-nav">
       <nav>
         <ul>
-        <li><Link to={'/'}>Inicio</Link></li>
-          <li><a href="#section2">Sobre mim</a></li>
-          <li><a href="#section3" >Habilidades</a></li>
-          <li>
-          <a href="#section4">Projetos</a>
-          </li>
-          <li><Link className='contact-btn' to={'contact'}>CONTATO</Link></li>
+        <li onClick={() => scrollToElement('section1')}><Link to={'/'}>Inicio</Link></li>
+         <li><a onClick={() => scrollToElement('section2')} style={{cursor:"pointer"}}>Sobre mim</a></li>
+        <li><a onClick={() => scrollToElement('section3')}style={{cursor:"pointer"}}>Habilidades</a></li>
+        <li><a onClick={() => scrollToElement('section4')}style={{cursor:"pointer"}}>Projetos</a></li>
+          <li><Link className='contact-btn' to={'contact'}style={{cursor:"pointer"}}>CONTATO</Link></li>
           
         </ul>
       </nav>
-      {/* <a href="#section4" onClick={() => { handleMenuItemClick('Projetos'); }} className={menuAtivo === 'Projetos' ? 'ativo' : ''} >Projetos</a>*/}
-   
     </div>
    </header>
   )
