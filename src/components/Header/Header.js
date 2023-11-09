@@ -27,6 +27,7 @@ const Header = () => {
           <li><a href="#section2"onClick={() => { handleMenuItemClick('Sobre mim');  }} className={menuAtivo === 'Sobre mim' ? 'ativo' : ''} >Sobre mim</a></li>
           <li><a href="#section3"  onClick={() => { handleMenuItemClick('Habilidades');}} className={menuAtivo === 'Habilidades' ? 'ativo' : ''} >Habilidades</a></li>
           <li><a href="#section4" onClick={() => { handleMenuItemClick('Projetos'); }} className={menuAtivo === 'Projetos' ? 'ativo' : ''} >Projetos</a></li>
+          
         </ul>
       </nav>
    
