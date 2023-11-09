@@ -19,11 +19,11 @@
     
 }
 .menu_mobile ul li{
-padding-top:5em;
+padding-top:4em;
 font-size: 1.3em;
 
 }
-.menu_mobile ul li a{
+.menu_mobile ul li a {
     font-family: var(--font-standard), sans-serif;
     font-size: 0.9em;
     text-transform: capitalize;
@@ -36,11 +36,8 @@ font-size: 1.3em;
     animation-fill-mode: forwards;
     margin-left: 50px;
     opacity: 0;
+}
 
-}
-.menu_mobile ul li a:hover{
-    text-decoration: underline;
-}
 
 .visible{
     top: 0px;

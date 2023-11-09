@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { MenuContext } from '../../context/MenuContext'
 import './MenuMobile.css'
 import { FaXmark } from "react-icons/fa6";
+import {Link} from 'react-router-dom'
 
 
 const MenuMobile = () => {
@@ -15,17 +16,18 @@ const MenuMobile = () => {
             <FaXmark onClick={toggleMenu}/>
           <ul>
             <li >
-              <a href="#section1"  onClick={toggleMenu}>Ínicio</a>
+              <a href="/#section1"  onClick={toggleMenu}>Ínicio</a>
             </li>
             <li>
-              <a href="#section2"onClick={toggleMenu}>Sobre mim</a>
+              <a href="/#section2"onClick={toggleMenu}>Sobre mim</a>
             </li>
             <li>
-              <a href="#section3"onClick={toggleMenu}>Habilidades</a>
+              <a href="/#section3"onClick={toggleMenu}>Habilidades</a>
             </li>
             <li>
-              <a href="#section4"onClick={toggleMenu}>Projetos</a>
+              <a href="/#section4"onClick={toggleMenu}>Projetos</a>
             </li>
+            <li><Link className='contact-btn' to={'contact'} onClick={toggleMenu} style={{color:"#CEDEBD"}}>CONTATO</Link></li>
           </ul>
         </nav>
       )}
