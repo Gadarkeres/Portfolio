@@ -23,7 +23,7 @@ const Header = () => {
       <div className="menu-mobile">
       <FaBars onClick={toggleMenu}/>
     </div>
-    <div className="logo" onClick={() => scrollToElement('section1')}><a href="">M/R</a></div>
+    <div className="logo">M/R</div>
     <div className="Box-nav">
       <nav>
         <ul>
