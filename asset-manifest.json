@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc014256.css",
-    "main.js": "/static/js/main.11ceef6a.js",
-    "static/media/petshop-virtual.png": "/static/media/petshop-virtual.913cbe5542c459665b2a.png",
-    "static/media/background.jpg": "/static/media/background.5fdbbe57f0f4ddb8d873.jpg",
-    "static/media/em-breve.jpg": "/static/media/em-breve.fc30758a22fdab20c69d.jpg",
-    "static/media/css-image.png": "/static/media/css-image.19c8605d6b2861f5fbe0.png",
-    "static/media/CV-Atualizado-Matheus.pdf": "/static/media/CV-Atualizado-Matheus.9ded912ed5e8457db9a8.pdf",
-    "static/media/projeto_filme.ong.png": "/static/media/projeto_filme.ong.ce3f67c163305f4b2f68.png",
-    "static/media/javascript-logo.png": "/static/media/javascript-logo.130c0ecd57833da6f75c.png",
-    "static/media/vayne.png": "/static/media/vayne.2d662827001600773e53.png",
-    "static/media/react-icon.png": "/static/media/react-icon.be6888e73f20a1e7ee12.png",
-    "static/media/timer.png": "/static/media/timer.7fab41fad7064f7c1db9.png",
-    "static/media/gerador.png": "/static/media/gerador.0e2efae9ce5df9ca61e1.png",
-    "static/media/todo-list.png": "/static/media/todo-list.61b26d4a4666da45a6bf.png",
-    "index.html": "/index.html",
-    "main.cc014256.css.map": "/static/css/main.cc014256.css.map",
-    "main.11ceef6a.js.map": "/static/js/main.11ceef6a.js.map"
+    "main.css": "/Portifolio/static/css/main.cc014256.css",
+    "main.js": "/Portifolio/static/js/main.d0346f9d.js",
+    "static/media/petshop-virtual.png": "/Portifolio/static/media/petshop-virtual.913cbe5542c459665b2a.png",
+    "static/media/background.jpg": "/Portifolio/static/media/background.5fdbbe57f0f4ddb8d873.jpg",
+    "static/media/em-breve.jpg": "/Portifolio/static/media/em-breve.fc30758a22fdab20c69d.jpg",
+    "static/media/css-image.png": "/Portifolio/static/media/css-image.19c8605d6b2861f5fbe0.png",
+    "static/media/CV-Atualizado-Matheus.pdf": "/Portifolio/static/media/CV-Atualizado-Matheus.9ded912ed5e8457db9a8.pdf",
+    "static/media/projeto_filme.ong.png": "/Portifolio/static/media/projeto_filme.ong.ce3f67c163305f4b2f68.png",
+    "static/media/javascript-logo.png": "/Portifolio/static/media/javascript-logo.130c0ecd57833da6f75c.png",
+    "static/media/vayne.png": "/Portifolio/static/media/vayne.2d662827001600773e53.png",
+    "static/media/react-icon.png": "/Portifolio/static/media/react-icon.be6888e73f20a1e7ee12.png",
+    "static/media/timer.png": "/Portifolio/static/media/timer.7fab41fad7064f7c1db9.png",
+    "static/media/gerador.png": "/Portifolio/static/media/gerador.0e2efae9ce5df9ca61e1.png",
+    "static/media/todo-list.png": "/Portifolio/static/media/todo-list.61b26d4a4666da45a6bf.png",
+    "index.html": "/Portifolio/index.html",
+    "main.cc014256.css.map": "/Portifolio/static/css/main.cc014256.css.map",
+    "main.d0346f9d.js.map": "/Portifolio/static/js/main.d0346f9d.js.map"
   },
   "entrypoints": [
     "static/css/main.cc014256.css",
-    "static/js/main.11ceef6a.js"
+    "static/js/main.d0346f9d.js"
   ]
 }
