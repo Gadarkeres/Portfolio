@@ -4,6 +4,7 @@ import { MenuContext } from '../../context/MenuContext';
 import {Link} from 'react-router-dom'
 // icones
 import { FaBars } from "react-icons/fa6";
+import { ButtonContext } from '../../context/ButtonContext';
 
 const Header = () => {
       const {toggleMenu} = useContext(MenuContext)
@@ -11,22 +12,31 @@ const Header = () => {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
       }
 
+     
+      const {backbutton, toggleButton} = useContext(ButtonContext)
+
+
+
       
   return (
     <header>
       <div className="menu-mobile">
       <FaBars onClick={toggleMenu}/>
     </div>
-    <div className="logo"><a href="/#section1" className='link'>M/R</a></div>
+    <div className="logo" onClick={() => scrollToElement('section1')}><Link to={'/'}>M/R</Link></div>
     <div className="Box-nav">
       <nav>
         <ul>
-        <li onClick={() => scrollToElement('section1')}><Link to={'/'}>Inicio</Link></li>
+        <li onClick={() => scrollToElement('section1')}><Link to={'/'}>início</Link></li>
          <li><a onClick={() => scrollToElement('section2')} style={{cursor:"pointer"}}>Sobre mim</a></li>
         <li><a onClick={() => scrollToElement('section3')}style={{cursor:"pointer"}}>Habilidades</a></li>
         <li><a onClick={() => scrollToElement('section4')}style={{cursor:"pointer"}}>Projetos</a></li>
-          <li><Link className='contact-btn' to={'contact'}style={{cursor:"pointer"}}>CONTATO</Link></li>
-          
+          {backbutton && (
+            <li><Link className='contact-btn' onClick={toggleButton} to={'/'}style={{cursor:"pointer", backgroundColor:'#6eb8f5', color:"#0e4361"}}>VOLTAR</Link></li>
+          )}
+          {!backbutton &&(
+            <li><Link className='contact-btn' onClick={toggleButton} to={'contact'}style={{cursor:"pointer"} }>CONTATO</Link></li>
+          )}
         </ul>
       </nav>
     </div>

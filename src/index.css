@@ -12,10 +12,4 @@ body, html{
   color: #CEDEBD;
   border: 1px solid  transparent;
   font-size: 1.25rem;
-  opacity: 0.85;
-  transform: 0.2s;
-}
-.contact-btn:hover{
-  border: 1px solid #435334;
-  opacity: 1;
 }
