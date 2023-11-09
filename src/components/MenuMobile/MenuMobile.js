@@ -16,16 +16,16 @@ const MenuMobile = () => {
             <FaXmark onClick={toggleMenu}/>
           <ul>
             <li >
-              <a href="/#section1"  onClick={toggleMenu}>Ínicio</a>
+            <Link to={'/'} onClick={toggleMenu}>Inicio</Link>
             </li>
             <li>
-              <a href="/#section2"onClick={toggleMenu}>Sobre mim</a>
+              <a href="#section2">Sobre mim</a>
             </li>
             <li>
-              <a href="/#section3"onClick={toggleMenu}>Habilidades</a>
+              <a href="#section3">Habilidades</a>
             </li>
             <li>
-              <a href="/#section4"onClick={toggleMenu}>Projetos</a>
+            <a href="#section4">Projetos</a>
             </li>
             <li><Link className='contact-btn' to={'contact'} onClick={toggleMenu} style={{color:"#CEDEBD"}}>CONTATO</Link></li>
           </ul>

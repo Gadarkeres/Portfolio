@@ -23,7 +23,7 @@ function App() {
               <Section02 />
               <Section03 />
               <Projects />
-              <Footer />
+              
             </>
           }/>
         </Routes>

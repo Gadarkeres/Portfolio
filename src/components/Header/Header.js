@@ -6,13 +6,7 @@ import {Link} from 'react-router-dom'
 import { FaBars } from "react-icons/fa6";
 
 const Header = () => {
-   
   
-  const [menuAtivo, setMenuativo] = useState('inicio')
-    const handleMenuItemClick = (item) =>{
-        setMenuativo(item)
-      }
-
       const {toggleMenu} = useContext(MenuContext)
       
   return (
@@ -24,14 +18,17 @@ const Header = () => {
     <div className="Box-nav">
       <nav>
         <ul>
-        <li><a href="/#section1"onClick={() => { handleMenuItemClick('Início'); }} className={menuAtivo === 'Início' ? 'ativo' : ''}>Início</a></li>
-          <li><a href="/#section2"onClick={() => { handleMenuItemClick('Sobre mim');  }} className={menuAtivo === 'Sobre mim' ? 'ativo' : ''} >Sobre mim</a></li>
-          <li><a href="#section3"  onClick={() => { handleMenuItemClick('Habilidades');}} className={menuAtivo === 'Habilidades' ? 'ativo' : ''} >Habilidades</a></li>
-          <li><a href="/#section4" onClick={() => { handleMenuItemClick('Projetos'); }} className={menuAtivo === 'Projetos' ? 'ativo' : ''} >Projetos</a></li>
+        <li><Link to={'/'}>Inicio</Link></li>
+          <li><a href="#section2">Sobre mim</a></li>
+          <li><a href="#section3" >Habilidades</a></li>
+          <li>
+          <a href="#section4">Projetos</a>
+          </li>
           <li><Link className='contact-btn' to={'contact'}>CONTATO</Link></li>
           
         </ul>
       </nav>
+      {/* <a href="#section4" onClick={() => { handleMenuItemClick('Projetos'); }} className={menuAtivo === 'Projetos' ? 'ativo' : ''} >Projetos</a>*/}
    
     </div>
    </header>
