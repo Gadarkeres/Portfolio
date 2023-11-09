@@ -23,7 +23,7 @@ const MenuMobile = () => {
         <nav className='menu_mobile' >
             <FaXmark onClick={toggleMenu}/>
             <ul>
-            <li onClick={() => scrollToElement('section1')}><Link to={'/'}>Início</Link></li>
+            <li><a onClick={() => scrollToElement('section1')}style={{cursor:"pointer"}}>Início</a></li>
            <li><a onClick={() => scrollToElement('section2')}style={{cursor:"pointer"}}>Sobre mim</a></li>
           <li><a onClick={() => scrollToElement('section3')}style={{cursor:"pointer"}}>Habilidades</a></li>
          <li><a onClick={() => scrollToElement('section4')} style={{cursor:"pointer"}}>Projetos</a></li>
