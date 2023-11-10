@@ -4,7 +4,7 @@ import { FaRegWindowClose } from "react-icons/fa";
 import img from './img/sucess.png'
 
 
-const Modal = ({open, setOpen, title, alt, paragraph}) => {
+const Modal = ({open, setOpen, title, paragraph}) => {
     const closeModal = () => {
         setOpen(!open)
       };
