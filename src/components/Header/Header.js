@@ -11,19 +11,15 @@ const Header = () => {
       function scrollToElement(id) {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
       }
-
-     
       const {backbutton, toggleButton} = useContext(ButtonContext)
-
-
-
       
+
   return (
     <header>
       <div className="menu-mobile">
       <FaBars onClick={toggleMenu}/>
     </div>
-    <div className="logo">M/R</div>
+    <div className="logo" style={{cursor:'default'}}>M/R</div>
     <div className="Box-nav">
       <nav>
         <ul>

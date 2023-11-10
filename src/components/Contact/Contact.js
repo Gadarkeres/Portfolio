@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import emailjs from '@emailjs/browser'
 const Contact = () => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [msg, setMsg] = useState('')
+
     const[error_name, setError_name] = useState('')
     const[error_email, setError_email] = useState('')
     const[error_msg, setError_msg] = useState('')
-    console.log(name, email, msg)
+
+    const [loading, setLoading] = useState('ENVIAR')
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -24,19 +28,30 @@ const Contact = () => {
           setError_email('');
           setError_msg('');
         
-    
           const errorName = checkEmpty(name, setError_name, 'O nome é obrigatório');
           const errorEmail = checkEmpty(email, setError_email, 'Insira um e-mail válido.');
           const errorMsg = checkEmpty(msg, setError_msg, 'A mensagem é obrigatória.');
           if (errorName || errorEmail || errorMsg) {
             return;
           }
+        
+          const templateParams = {
+            from_name: name,
+            message: msg,
+            email:email
+          }
+          setLoading('Enviando..')
+        emailjs.send("service_dsy2vxr","template_ulju5wg", templateParams, "kSjVQpke0aoNqFL_k")
+        .then((res) => {
           setName('');
           setEmail('');
           setMsg('');
+          setLoading('ENVIAR')
 
-
-          alert('enviado');
+        }, (err) =>{
+          console.log('erro:' + err)
+        })
+         
         
     }
 
@@ -67,7 +82,7 @@ const Contact = () => {
                 <small>{error_msg}</small>
                
                 </div>
-                <input type="submit" value="ENVIAR" />
+                <input type="submit" value={loading} />
         </div>
       </form>
     </div>
