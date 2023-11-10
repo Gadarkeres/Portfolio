@@ -54,6 +54,7 @@ const Contact = () => {
 
         }, (err) =>{
           console.log('erro:' + err)
+          window.alert('Erro:' + err + 'tente novamente mais tarde.')
         })
          
         
