@@ -6,6 +6,7 @@
     min-height: 100vh;
     background-color: #CEDEBD;
     flex-direction: column;
+    z-index: 10;
 }
 label{
     display: block;
@@ -40,11 +41,13 @@ label{
     border: 2px solid #435334;
 }
 .form textarea{
+    font-family: var(--font-standard), sans-serif;
     font-size: 1.05rem;
     width: 320px;
     padding: 10px 15px;
     border-radius: 5px; 
     border: 2px solid #CEDEBD;
+ 
 }
 .form textarea:focus{
     outline: none;
@@ -55,13 +58,18 @@ label{
     color: #CEDEBD;
     border-radius: 25px;
     background-color:  #435334;
-    transition: all 0.4s ease-in-out;
+    border: 2px solid #435334;
+    transition: all 0.5s;
     font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
     
 }
 .form :nth-child(4):hover{
     cursor: pointer;
-    transform: scale(1.03);
+    background-color: #CEDEBD;
+    border: 2px solid #435334;
+    color:#435334 ;
 }
 .name, .email, .msg {
     display: flex;
@@ -78,4 +86,9 @@ small{
    .title h2{
         max-width: 300px;
     }
+    .form{
+
+        min-width: 350px;
+    }
+    
 }

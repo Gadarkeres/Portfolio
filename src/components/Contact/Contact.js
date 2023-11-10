@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser'
+import Modal from '../Modal/Modal'
+
 const Contact = () => {
 
     const [name, setName] = useState('')
@@ -11,8 +13,9 @@ const Contact = () => {
     const[error_email, setError_email] = useState('')
     const[error_msg, setError_msg] = useState('')
 
-    const [loading, setLoading] = useState('ENVIAR')
+    const [loading, setLoading] = useState(false)
 
+    const[open, setOpen] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -40,13 +43,14 @@ const Contact = () => {
             message: msg,
             email:email
           }
-          setLoading('Enviando..')
+          setLoading(true)
         emailjs.send("service_dsy2vxr","template_ulju5wg", templateParams, "kSjVQpke0aoNqFL_k")
         .then((res) => {
           setName('');
           setEmail('');
           setMsg('');
-          setLoading('ENVIAR')
+          setLoading(false)
+          setOpen(!open)
 
         }, (err) =>{
           console.log('erro:' + err)
@@ -80,12 +84,18 @@ const Contact = () => {
                 <label htmlFor='textareaIn'>Sua mensagem</label>
                 <textarea name="textarea" id="textareaIn" cols="30" rows="10" placeholder='Escreva sua mensagem...'value={msg} onChange={(e) => setMsg(e.target.value)}></textarea>
                 <small>{error_msg}</small>
-               
                 </div>
-                <input type="submit" value={loading} />
+                {!loading && (
+                  <input type="submit" className='submit' value="Enviar" />
+                )}
+                {loading && (
+                  <input type="submit" style={{opacity:"0.7", cursor:"not-allowed",}} value="Enviando.." />
+                )}
         </div>
       </form>
+      <Modal open={open} setOpen={setOpen} title={"Mensagem enviada com sucesso!"}  paragraph={"Obrigado por entrar em contato, te responderei assim que possivel."} ></Modal>
     </div>
+    
   )
 }
 
