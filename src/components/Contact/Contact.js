@@ -15,7 +15,7 @@ const Contact = () => {
 
     const [loading, setLoading] = useState(false)
 
-    const[open, setOpen] = useState(true)
+    const[open, setOpen] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
