@@ -25,7 +25,17 @@
     border-radius: 5px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4)ack;
     max-width: 350px;
+    animation: fadeInOut 0.5s;
 }
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .modal img{
     max-width: 300px;
     max-height: 200px;
