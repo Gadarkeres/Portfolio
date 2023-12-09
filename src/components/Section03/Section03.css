@@ -10,6 +10,14 @@
     color: var(--blue-v);
     text-transform: uppercase;
 }
+.container-pai{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
 
 .container{
     padding-top: 50px;
@@ -19,7 +27,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
+    max-width: 800px;
     
 }
 .container .habilidades{
@@ -65,7 +74,7 @@
 .text{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 0px;
     padding-bottom: 50px;
 }
 .text_little{
@@ -132,6 +141,7 @@
   
   }
 
+
 .animaction {
     animation-name: animation;
     animation-duration: 1.5s;
@@ -162,5 +172,6 @@
 }
 .container {
     gap: 50px;
+  
 }
 }
