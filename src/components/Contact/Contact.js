@@ -18,6 +18,7 @@ const Contact = () => {
     const[open, setOpen] = useState(false)
 
     const handleSubmit = (e) => {
+      console.log('submited')
         e.preventDefault()
         const checkEmpty = (field, setError, errorMessage) => {
             if (field === '') {
@@ -34,7 +35,9 @@ const Contact = () => {
           const errorName = checkEmpty(name, setError_name, 'O nome é obrigatório');
           const errorEmail = checkEmpty(email, setError_email, 'Insira um e-mail válido.');
           const errorMsg = checkEmpty(msg, setError_msg, 'A mensagem é obrigatória.');
+         
           if (errorName || errorEmail || errorMsg) {
+          
             return;
           }
         
@@ -59,8 +62,6 @@ const Contact = () => {
          
         
     }
-
-
 
   return (
     <div className='container-contact'>
@@ -87,10 +88,10 @@ const Contact = () => {
                 <small>{error_msg}</small>
                 </div>
                 {!loading && (
-                  <input type="submit" className='submit' value="Enviar" />
+                  <input type="submit" className='submit' value="Enviar"  />
                 )}
                 {loading && (
-                  <input type="submit" style={{opacity:"0.7", cursor:"not-allowed",}} value="Enviando.." />
+                  <input type="submit" style={{opacity:"0.7", cursor:"not-allowed",}} value="Enviando.." disabled={true}  />
                 )}
         </div>
       </form>
