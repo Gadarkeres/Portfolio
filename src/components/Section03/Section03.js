@@ -13,6 +13,13 @@ import git_image from "./images/git.png";
 import tailwind_image from "./images/tailwind-css-logo-5AD4175897-seeklogo.com.png";
 // pdf
 import pdf from "./file/CV-Atualizado-Matheus.pdf";
+// hook
+import { mensagemHTML } from "./hook";
+import { mensagemCSS } from "./hook";
+import { mensagemJS } from "./hook";
+import { mensagemReact } from "./hook";
+import { mensagemGit } from "./hook";
+import { mensagemTailwind } from "./hook";
 
 const Section03 = () => {
   const [msg, setMsg] = useState(
@@ -33,41 +40,30 @@ const Section03 = () => {
     }, 150);
   };
 
-  const handleChangeMsgHTML = () => {
-    handleChangeMsg(
-      'HTML: Conhecida por linguagem de marcação de hipertexto, o HTML é basicamente o "esqueleto" da página, onde são inseridos parágrafos, títulos, botões, caixas com estilização bem padrão e genérica.'
-    );
-  };
-
-  const handleChangeMsgCSS = () => {
-    handleChangeMsg(
-      "CSS: Abreviado do Cascading Style Sheets, é um mecanismo para aplicar estilos nos elementos HTML, via seletor de classes, tags, IDs, seletores universais como * etc."
-    );
-  };
-
-  const handleChangeMsgJS = () => {
-    handleChangeMsg(
-      "JavaScript: Linguagem de programação orientada a objetos muito usada no desenvolvimento front-end, mas também pode ser usada no lado do servidor. As principais características do JavaScript em uma página incluem criar interações com o usuário com a manipulação do DOM."
-    );
-  };
-
-  const handleChangeMsgReact = () => {
-    handleChangeMsg(
-      "React: É uma biblioteca derivada do JavaScript, com as principais características: Virtual DOM, componentização para facilitar a manutenção do código e hooks."
-    );
-  };
-  const handleChangeMsgGit = () => {
-    handleChangeMsg(
-      "Git: Ferramenta de controle de versão de código, sendo indispensável nos dias de hoje. Os principais comandos são: git add, git commit, git status, git branch, git merge, e por aí vai. Isso permite que uma equipe crie várias ramificações em um código e trabalhe em conjunto."
-    );
-  };
-
-  const handleChangeMsgTailwind = () => {
-    handleChangeMsg(
-      "Tailwind: É um framework do css que nos permite estilizar nosso conteudo sem mesmo sair do nosso html por meio de classes, é muito pratico  quando o quesito é rapidez e agilidade"
-    );
-  };
-
+  const handleContainerMsg = (item) => {
+    switch (item) {
+      case "html":
+        handleChangeMsg(mensagemHTML);
+        break;
+      case "css":
+        handleChangeMsg(mensagemCSS);
+        break;
+      case "js":
+        handleChangeMsg(mensagemJS);
+        break;
+      case "react":
+        handleChangeMsg(mensagemReact);
+        break;
+      case "git":
+        handleChangeMsg(mensagemGit);
+        break;
+      case "tailwind":
+        handleChangeMsg(mensagemTailwind);
+        break;
+      default:
+        break;
+    }
+  }
   // fechando caixa de msg
 
   const handleCloseBox = () => {
@@ -94,7 +90,7 @@ const Section03 = () => {
             className={`habilidades ${animatedClass}`}
             ref={ref}
             onClick={() => {
-              handleChangeMsgHTML();
+              handleContainerMsg("html");
               handleMsgativa("html");
             }}
             id={msgAtiva === "html" ? "habilidade_ativa" : ""}
@@ -105,7 +101,7 @@ const Section03 = () => {
           <div
             className={`habilidades ${animatedClass}`}
             onClick={() => {
-              handleChangeMsgCSS();
+              handleContainerMsg("css");
               handleMsgativa("css");
             }}
             id={msgAtiva === "css" ? "habilidade_ativa" : ""}
@@ -121,7 +117,7 @@ const Section03 = () => {
           <div
             className={`habilidades ${animatedClass}`}
             onClick={() => {
-              handleChangeMsgJS();
+              handleContainerMsg("js");
               handleMsgativa("js");
             }}
             id={msgAtiva === "js" ? "habilidade_ativa" : ""}
@@ -132,7 +128,7 @@ const Section03 = () => {
           <div
             className={`habilidades ${animatedClass}`}
             onClick={() => {
-              handleChangeMsgReact();
+              handleContainerMsg("react");
               handleMsgativa("react");
             }}
             id={msgAtiva === "react" ? "habilidade_ativa" : ""}
@@ -147,7 +143,7 @@ const Section03 = () => {
           <div
             className={`habilidades ${animatedClass}`}
             onClick={() => {
-              handleChangeMsgGit();
+              handleContainerMsg("git");
               handleMsgativa("git");
             }}
             id={msgAtiva === "git" ? "habilidade_ativa" : ""}
@@ -162,7 +158,7 @@ const Section03 = () => {
           <div
             className={`habilidades ${animatedClass}`}
             onClick={() => {
-              handleChangeMsgTailwind();
+              handleContainerMsg("tailwind");
               handleMsgativa("tailwind");
             }}
             id={msgAtiva === "tailwind" ? "habilidade_ativa" : ""}
