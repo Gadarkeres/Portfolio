@@ -64,8 +64,8 @@ const Section03 = () => {
         break;
     }
   }
-  // fechando caixa de msg
 
+  // Fechando caixa de msg
   const handleCloseBox = () => {
     if (setMsg !== null && setExpandtext !== null) {
       setMsg("/* Selecione alguma tecnologia acima para saber mais */");
@@ -73,10 +73,12 @@ const Section03 = () => {
       setMsgAtiva(null);
     }
   };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
   const animatedClass = inView ? "animaction" : "";
 
   return (
@@ -171,6 +173,7 @@ const Section03 = () => {
             />
           </div>
         </div>
+
         <div className="text">
           <div className={`text_little ${expandText}`}>
             {expandText === "text_expand" ? (
@@ -179,11 +182,11 @@ const Section03 = () => {
             <p>{msg}</p>
           </div>
         </div>
-      </div>
-      <div className="button_container">
-        <a href={pdf} download>
-          Download CV
-        </a>
+        <div className="button_container">
+          <a href={pdf} download>
+            Download CV
+          </a>
+        </div>
       </div>
     </section>
   );
