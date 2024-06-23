@@ -17,7 +17,6 @@ const Contact = () => {
 
   const Submit = (data, e) => {
     e.preventDefault();
-    console.log(data);
 
     const templateParams = {
       from_name: data.name,
@@ -34,7 +33,6 @@ const Contact = () => {
       )
       .then(
         (res) => {
-          console.log(res);
           setValue("name", "");
           setValue("email", "");
           setValue("mensage", "");
@@ -42,7 +40,6 @@ const Contact = () => {
           setOpen(!open);
         },
         (err) => {
-          console.log("erro:" + err);
           window.alert("Erro:" + err + "tente novamente mais tarde.");
         }
       );
@@ -69,7 +66,7 @@ const Contact = () => {
           <div className="email">
             <label htmlFor="emailIn">Seu E-mail:</label>
             <input
-              type="Email"
+              type="email"
               id="emailIn"
               placeholder="Email"
               {...register("email", { required: "O email é obrigatório" })}
