@@ -1,0 +1,7 @@
+// Objetivo: Arquivo de configuração de mensagens para o componente Section03
+export const mensagemHTML = 'HTML: Conhecida por linguagem de marcação de hipertexto, o HTML é basicamente o "esqueleto" da página, onde são inseridos parágrafos, títulos, botões, caixas com estilização bem padrão e genérica.'
+export const mensagemCSS = 'CSS: Abreviado do Cascading Style Sheets, é um mecanismo para aplicar estilos nos elementos HTML, via seletor de classes, tags, IDs, seletores universais como * etc.'
+export const mensagemJS = 'JavaScript: Linguagem de programação orientada a objetos muito usada no desenvolvimento front-end, mas também pode ser usada no lado do servidor. As principais características do JavaScript em uma página incluem criar interações com o usuário com a manipulação do DOM.'
+export const mensagemReact = 'React: É uma biblioteca derivada do JavaScript, com as principais características: Virtual DOM, componentização para facilitar a manutenção do código e hooks.'
+export const mensagemGit = 'Git: Ferramenta de controle de versão de código, sendo indispensável nos dias de hoje. Os principais comandos são: git add, git commit, git status, git branch, git merge, e por aí vai. Isso permite que uma equipe crie várias ramificações em um código e trabalhe em conjunto.'
+export const mensagemTailwind = 'Tailwind: É um framework do css que nos permite estilizar nosso conteudo sem mesmo sair do nosso html por meio de classes, é muito pratico  quando o quesito é rapidez e agilidade'

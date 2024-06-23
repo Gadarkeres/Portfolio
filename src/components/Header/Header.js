@@ -23,14 +23,13 @@ const Header = () => {
     <div className="Box-nav">
       <nav>
         <ul>
-        <li><a onClick={() => scrollToElement('section1')} style={{cursor:"pointer"}}>Ínicio</a></li>
-         <li><a onClick={() => scrollToElement('section2')} style={{cursor:"pointer"}}>Sobre mim</a></li>
-        <li><a onClick={() => scrollToElement('section3')}style={{cursor:"pointer"}}>Habilidades</a></li>
-        <li><a onClick={() => scrollToElement('section4')}style={{cursor:"pointer"}}>Projetos</a></li>
-          {backbutton && (
-            <li><Link className='contact-btn' onClick={toggleButton} to={'/'}style={{cursor:"pointer", backgroundColor:'#6eb8f5', color:"#0e4361"}}>VOLTAR</Link></li>
-          )}
-          {!backbutton &&(
+        <li><a onClick={() => scrollToElement('section1')}>Ínicio</a></li>
+         <li><a onClick={() => scrollToElement('section2')}>Sobre mim</a></li>
+        <li><a onClick={() => scrollToElement('section3')}>Habilidades</a></li>
+        <li><a onClick={() => scrollToElement('section4')}>Projetos</a></li>
+          {backbutton ? (
+             <li><Link className='contact-btn' onClick={toggleButton} to={'/'}style={{cursor:"pointer", backgroundColor:'#6eb8f5', color:"#0e4361"}}>VOLTAR</Link></li>
+          ):(
             <li><Link className='contact-btn' onClick={toggleButton} to={'contact'}style={{cursor:"pointer"} }>CONTATO</Link></li>
           )}
         </ul>
