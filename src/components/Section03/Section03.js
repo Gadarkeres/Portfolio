@@ -84,113 +84,115 @@ const Section03 = () => {
   const animatedClass = inView ? "animaction" : "";
 
   return (
-    <section id="section3">
-      <div className="tittle">
-        <h2>Habilidades</h2>
-      </div>
-      <div className="container-pai">
-        <div className="container">
-          <div
-            className={`habilidades ${animatedClass}`}
-            ref={ref}
-            onClick={() => {
-              handleChangeMsgHTML();
-              handleMsgativa("html");
-            }}
-            id={msgAtiva === "html" ? "habilidade_ativa" : ""}
-          >
-            <img className="image" src={html_image} alt="icone do html" />
+      <section id="section3">
+        <div className="tittle">
+          <h2>Habilidades</h2>
+        </div>
+        <div className="container-pai">
+          <div className="container">
+           
+            <div
+              className={`habilidades ${animatedClass}`}
+              ref={ref}
+              onClick={() => {
+                handleChangeMsgHTML();
+                handleMsgativa("html");
+              }}
+              id={msgAtiva === "html" ? "habilidade_ativa" : ""}
+            >
+              <img className="image" src={html_image} alt="icone do html" />
+            </div>
+
+            <div
+              className={`habilidades ${animatedClass}`}
+              onClick={() => {
+                handleChangeMsgCSS();
+                handleMsgativa("css");
+              }}
+              id={msgAtiva === "css" ? "habilidade_ativa" : ""}
+            >
+              <img
+                className="image"
+                style={{ position: "absolute", right: "30px" }}
+                src={css_image}
+                alt="icone do css"
+              />
+            </div>
+
+            <div
+              className={`habilidades ${animatedClass}`}
+              onClick={() => {
+                handleChangeMsgJS();
+                handleMsgativa("js");
+              }}
+              id={msgAtiva === "js" ? "habilidade_ativa" : ""}
+            >
+              <img className="image" src={js_image} alt="icone do Javascript" />
+            </div>
+
+            <div
+              className={`habilidades ${animatedClass}`}
+              onClick={() => {
+                handleChangeMsgReact();
+                handleMsgativa("react");
+              }}
+              id={msgAtiva === "react" ? "habilidade_ativa" : ""}
+            >
+              <img
+                className="image"
+                src={react_image}
+                style={{ position: "absolute", right: "32px" }}
+                alt="icone do React"
+              />
+            </div>
+            <div
+              className={`habilidades ${animatedClass}`}
+              onClick={() => {
+                handleChangeMsgGit();
+                handleMsgativa("git");
+              }}
+              id={msgAtiva === "git" ? "habilidade_ativa" : ""}
+            >
+              <img
+                className="image"
+                src={git_image}
+                style={{ position: "absolute", right: "32px" }}
+                alt="icone do Git"
+              />
+            </div>
+            <div
+              className={`habilidades ${animatedClass}`}
+              onClick={() => {
+                handleChangeMsgTailwind();
+                handleMsgativa("tailwind");
+              }}
+              id={msgAtiva === "tailwind" ? "habilidade_ativa" : ""}
+            >
+              <img
+                className="image"
+                src={tailwind_image}
+                style={{ position: "absolute", right: "20px", width: "120px" }}
+                alt="icone do Git"
+              />
+            </div>
           </div>
 
-          <div
-            className={`habilidades ${animatedClass}`}
-            onClick={() => {
-              handleChangeMsgCSS();
-              handleMsgativa("css");
-            }}
-            id={msgAtiva === "css" ? "habilidade_ativa" : ""}
-          >
-            <img
-              className="image"
-              style={{ position: "absolute", right: "30px" }}
-              src={css_image}
-              alt="icone do css"
-            />
-          </div>
-
-          <div
-            className={`habilidades ${animatedClass}`}
-            onClick={() => {
-              handleChangeMsgJS();
-              handleMsgativa("js");
-            }}
-            id={msgAtiva === "js" ? "habilidade_ativa" : ""}
-          >
-            <img className="image" src={js_image} alt="icone do Javascript" />
-          </div>
-
-          <div
-            className={`habilidades ${animatedClass}`}
-            onClick={() => {
-              handleChangeMsgReact();
-              handleMsgativa("react");
-            }}
-            id={msgAtiva === "react" ? "habilidade_ativa" : ""}
-          >
-            <img
-              className="image"
-              src={react_image}
-              style={{ position: "absolute", right: "32px" }}
-              alt="icone do React"
-            />
-          </div>
-          <div
-            className={`habilidades ${animatedClass}`}
-            onClick={() => {
-              handleChangeMsgGit();
-              handleMsgativa("git");
-            }}
-            id={msgAtiva === "git" ? "habilidade_ativa" : ""}
-          >
-            <img
-              className="image"
-              src={git_image}
-              style={{ position: "absolute", right: "32px" }}
-              alt="icone do Git"
-            />
-          </div>
-          <div
-            className={`habilidades ${animatedClass}`}
-            onClick={() => {
-              handleChangeMsgTailwind();
-              handleMsgativa("tailwind");
-            }}
-            id={msgAtiva === "tailwind" ? "habilidade_ativa" : ""}
-          >
-            <img
-              className="image"
-              src={tailwind_image}
-              style={{ position: "absolute", right: "20px", width: "120px" }}
-              alt="icone do Git"
-            />
+          <div className="text">
+            <div className={`text_little ${expandText}`}>
+              {expandText === "text_expand" ? (
+                <FaWindowClose onClick={handleCloseBox} />
+              ) : null}
+              <p>{msg}</p>
+            </div>
           </div>
         </div>
-        <div className="text">
-          <div className={`text_little ${expandText}`}>
-            {expandText === "text_expand" ? (
-              <FaWindowClose onClick={handleCloseBox} />
-            ) : null}
-            <p>{msg}</p>
-          </div>
+        <div className="button_container">
+          <a href={pdf} download>
+            Download CV
+          </a>
         </div>
-      </div>
-      <div className="button_container">
-        <a href={pdf} download>
-          Download CV
-        </a>
-      </div>
-    </section>
-  );
+      </section>
+    );
 };
 
 export default Section03;

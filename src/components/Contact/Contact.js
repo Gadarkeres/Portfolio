@@ -2,51 +2,27 @@ import React, { useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import Modal from "../Modal/Modal";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
-
-  const [error_name, setError_name] = useState("");
-  const [error_email, setError_email] = useState("");
-  const [error_msg, setError_msg] = useState("");
-
   const [loading, setLoading] = useState(false);
 
   const [open, setOpen] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setValue,
+  } = useForm({});
 
-  const handleSubmit = (e) => {
-    console.log("submited");
+  const Submit = (data, e) => {
     e.preventDefault();
-    const checkEmpty = (field, setError, errorMessage) => {
-      if (field === "") {
-        setError(errorMessage);
-        return true;
-      }
-      return false;
-    };
-    // Reset errors
-    setError_name("");
-    setError_email("");
-    setError_msg("");
-
-    const errorName = checkEmpty(name, setError_name, "O nome é obrigatório");
-    const errorEmail = checkEmpty(
-      email,
-      setError_email,
-      "Insira um e-mail válido."
-    );
-    const errorMsg = checkEmpty(msg, setError_msg, "A mensagem é obrigatória.");
-
-    if (errorName || errorEmail || errorMsg) {
-      return;
-    }
+    console.log(data);
 
     const templateParams = {
-      from_name: name,
-      message: msg,
-      email: email,
+      from_name: data.name,
+      message: data.email,
+      email: data.message,
     };
     setLoading(true);
     emailjs
@@ -58,9 +34,10 @@ const Contact = () => {
       )
       .then(
         (res) => {
-          setName("");
-          setEmail("");
-          setMsg("");
+          console.log(res);
+          setValue("name", "");
+          setValue("email", "");
+          setValue("mensage", "");
           setLoading(false);
           setOpen(!open);
         },
@@ -77,7 +54,7 @@ const Contact = () => {
         <h2>Gostou do meu perfil? vamos conversar!</h2>
         <p>Costumo responder rapido.</p>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit(Submit)}>
         <div className="form">
           <div className="name">
             <label htmlFor="nameIn">Seu nome:</label>
@@ -85,10 +62,9 @@ const Contact = () => {
               type="text"
               id="nameIn"
               placeholder="Nome"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              {...register("name", { required: "O nome é obrigatório" })}
             />
-            <small>{error_name}</small>
+            <small>{errors?.name?.message}</small>
           </div>
           <div className="email">
             <label htmlFor="emailIn">Seu E-mail:</label>
@@ -96,10 +72,9 @@ const Contact = () => {
               type="Email"
               id="emailIn"
               placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              {...register("email", { required: "O email é obrigatório" })}
             />
-            <small>{error_email}</small>
+            <small>{errors?.email?.message}</small>
           </div>
           <div className="msg">
             <label htmlFor="textareaIn">Sua mensagem</label>
@@ -109,21 +84,25 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="Escreva sua mensagem..."
-              value={msg}
-              onChange={(e) => setMsg(e.target.value)}
+              {...register("mensage", {
+                required: "a mensagem é obrigatória",
+                minLength: {
+                  value: 20,
+                  message: "Por favor digite pelomenos 20 caracteres.",
+                },
+              })}
             ></textarea>
-            <small>{error_msg}</small>
+            <small>{errors?.mensage?.message}</small>
           </div>
-          {!loading && (
-            <input type="submit" className="submit" value="Enviar" />
-          )}
-          {loading && (
+          {loading ? (
             <input
               type="submit"
               style={{ opacity: "0.7", cursor: "not-allowed" }}
               value="Enviando.."
               disabled={true}
             />
+          ) : (
+            <input type="submit" className="submit" value="Enviar" />
           )}
         </div>
       </form>
